@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>DecaGreen - Recycle with Decathlon</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="bg-overlay">
+        <header>
+            <img src="decathlon-logo.png" alt="Decathlon Logo" class="logo" />
+            <h1>Welcome to DecaGreen</h1>
+            <p>Recycle Your Sports Equipment & Earn Rewards!</p>
+        </header>
+
+        <section class="main-section">
+            <div class="form-container">
+                <h2>Recycle Registration Form</h2>
+                <form id="registrationForm">
+                    <label for="userName">Name:</label>
+                    <input type="text" id="userName" placeholder="Enter your name" required />
+
+                    <label for="userMobile">Mobile Number:</label>
+                    <input type="text" id="userMobile" placeholder="Enter your mobile number" maxlength="10" pattern="[6-9]{1}[0-9]{9}" title="Enter a valid 10-digit mobile number starting with 6-9" required />
+
+                    <label for="userAddress">Address:</label>
+                    <input type="text" id="userAddress" placeholder="Enter your address" required />
+
+                    <label for="equipmentName">Select Equipment:</label>
+                    <select id="equipmentName" required>
+                        <optgroup label="Gaming Equipments">
+                            <option value="Balls">Balls</option>
+                            <option value="Bat">Bat</option>
+                            <option value="Racquets">Racquets</option>
+                            <option value="Football">Football</option>
+                            <option value="Tennis">Tennis</option>
+                            <option value="Hockey stick">Hockey stick</option>
+                            <option value="Volleyball">Volleyball</option>
+                        </optgroup>
+                        <optgroup label="Camping Equipment">
+                            <option value="Camping Tent">Camping Tent</option>
+                            <option value="Sleeping Bags">Sleeping Bags</option>
+                            <option value="Camping chairs and beds">Camping chairs and beds</option>
+                            <option value="Ski Equipments">Ski Equipments</option>
+                            <option value="Waterproof Trekking Boots">Waterproof Trekking Boots</option>
+                            <option value="Rock Climbing Equipments">Rock Climbing Equipments</option>
+                        </optgroup>
+                        <optgroup label="Gym & Workout">
+                            <option value="Home Gym">Home Gym</option>
+                            <option value="Treadmills">Treadmills</option>
+                            <option value="Gym Mat & Accessories">Gym Mat & Accessories</option>
+                            <option value="Gym Weights & Dumbbells">Gym Weights & Dumbbells</option>
+                            <option value="Gym Gloves & Supports">Gym Gloves & Supports</option>
+                            <option value="Electric Bike">Electric Bike</option>
+                        </optgroup>
+                        <optgroup label="Leisure Sport Equipment">
+                            <option value="Cycling">Cycling</option>
+                            <option value="Carrom">Carrom</option>
+                            <option value="Fishing">Fishing</option>
+                            <option value="Skating">Skating</option>
+                            <option value="Archery">Archery</option>
+                            <option value="Billiards">Billiards</option>
+                        </optgroup>
+                        <optgroup label="Accessories">
+                            <option value="Helmet">Helmet</option>
+                            <option value="Skateboard">Skateboard</option>
+                            <option value="Gloves">Gloves</option>
+                            <option value="Cricket protection kits">Cricket protection kits</option>
+                            <option value="Sports Bags">Sports Bags</option>
+                            <option value="Trekking Bags">Trekking Bags</option>
+                        </optgroup>
+                        <option value="Other">Other</option>
+                    </select>
+
+                    <button type="button" onclick="submitForm()">Submit</button>
+                </form>
+                <div id="confirmationMessage"></div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Find your nearest Decathlon store: <a href="tel:1800-202-1020">1800-202-1020</a></p>
+            <p>&copy; 2025 DecaGreen | Powered by Decathlon</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
